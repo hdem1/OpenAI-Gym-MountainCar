@@ -2,11 +2,11 @@ import gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rand
-from os.path import exists
+from os.path import exists, expanduser
 from threading import Thread
 
 env = gym.make('MountainCarContinuous-v0')
-filepath = "/Users/henrydemarest/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-MountainCar/Saved Networks/MC_gens-20_children-100_layers-0_layerHeight-3_networkTests-5_wMax-100_bMax-100.txt"
+filepath = expanduser("~/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-MountainCar/Saved Networks/MC_gens-20_children-100_layers-0_layerHeight-3_networkTests-5_wMax-100_bMax-100.txt")
 
 #open file:
 file = open(filepath, "r")
